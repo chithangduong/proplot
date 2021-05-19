@@ -624,7 +624,7 @@ def Cycle(
     *args, N=None, samples=None, name=None,
     marker=None, alpha=None, dashes=None, linestyle=None, linewidth=None,
     markersize=None, markeredgewidth=None,
-    markeredgecolor=None, markerfacecolor=None,
+    markeredgecolor=None, markerfacecolor=None, fillstyle=None,
     **kwargs
 ):
     """
@@ -707,6 +707,7 @@ def Cycle(
         ('markeredgewidth', markeredgewidth),
         ('markeredgecolor', markeredgecolor),
         ('markerfacecolor', markerfacecolor),
+        ('fillstyle', fillstyle)
     ):
         if value is not None:
             if isinstance(value, str) or not np.iterable(value):
